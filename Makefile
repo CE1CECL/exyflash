@@ -22,4 +22,4 @@ exyflash: exyflash.o
 
 .PHONY: clean
 clean:
-	rm -rfv exyflash.o exyflash
+	rm -rfv exyflash.o exyflash exyflash.exe
