@@ -1,7 +1,20 @@
-// exyflash
-// Copyright (c) 2023: Christopher Lentocha
-// SPDX-License-Identifier: AGPL-3.0-only
+/*
+    exyflash - Exynos Flash Tool for Google Tensor and other Samsung Exynos Devices - http://github.com/CE1CECL/exyflash
+    Copyright (C) 2007-2023 Christopher Lentocha <christopherericlentocha@gmail.com>
 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -121,6 +134,24 @@ int main(int argc, char *argv[])
 	int target_id = -1;
 	uint8_t mode;
 	int rc;
+
+	printf("\n");
+	printf("    exyflash - Exynos Flash Tool for Google Tensor and other Samsung Exynos Devices - http://github.com/CE1CECL/exyflash\n");
+	printf("    Copyright (C) 2007-2023 Christopher Lentocha <christopherericlentocha@gmail.com>\n");
+	printf("\n");
+	printf("    This program is free software: you can redistribute it and/or modify\n");
+	printf("    it under the terms of the GNU Affero General Public License as published\n");
+	printf("    by the Free Software Foundation, either version 3 of the License, or\n");
+	printf("    (at your option) any later version.\n");
+	printf("\n");
+	printf("    This program is distributed in the hope that it will be useful,\n");
+	printf("    but WITHOUT ANY WARRANTY; without even the implied warranty of\n");
+	printf("    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n");
+	printf("    GNU Affero General Public License for more details.\n");
+	printf("\n");
+	printf("    You should have received a copy of the GNU Affero General Public License\n");
+	printf("    along with this program.  If not, see <https://www.gnu.org/licenses/>.\n");
+	printf("\n");
 
 	if (!(argc == 4)) {
 		printf("Usage: %s <USB_BIN> <USB_VID> <USB_DEV>\n", argv[0]);
